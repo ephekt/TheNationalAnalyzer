@@ -1,0 +1,9 @@
+the public folder contains the all files needed to display the web site. Drop it in a php/apache-enabled directory and let the world see it.
+
+I've also included the grabber.rb ruby file that will scrape songmeanings.net, throw them into a local db, and then generate a JSON report and put that in the public/js directory.
+
+Open up grabber.rb to get the user,pass,db_name for your mysql database engine. Create those. Then you can use the songs.sql contents to create the songs database table. Now you can run the grabber.rb file if you want to generate an up to date report.
+
+Again, though, the public dir is entirely set to run 100% independent since it comes equipped with a public/js/report.js file already.
+
+-mike
